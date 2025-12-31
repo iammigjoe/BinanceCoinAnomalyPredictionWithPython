@@ -1,35 +1,31 @@
 # BinanceCoinAnomalyPredictionWithPython
 
-Project Title: Crypto Market Anomaly Detection & Regime Clustering
-
-1. Project Overview
-
-This project builds a complete unsupervised machine learning pipeline for detecting anomalies and identifying market regimes in cryptocurrency OHLCV data (Open, High, Low, Close, Volume).
-
-Using engineered financial features and clustering algorithms, the model identifies:
-	•	🔍 Abnormal market behavior (manipulation, liquidity spikes, flash crashes)
-	•	📊 Three distinct market regimes (calm, high-volatility, bullish momentum)
-
-The project is directly applicable to real-world crypto exchanges such as Local Token Exchange, improving market monitoring, risk detection, and strategic decision-making.
+Voici une version propre et sans emojis de ton README bilingue pour le projet Crypto Market Anomaly Detection & Regime Clustering, prête à être utilisée sur GitHub ou dans ton portfolio :
 
 ⸻
 
-2. Main Objectives
+Crypto Market Anomaly Detection & Regime Clustering
+
+Project Overview (EN)
+
+This project builds a complete unsupervised machine learning pipeline to detect anomalies and identify market regimes in cryptocurrency OHLCV data (Open, High, Low, Close, Volume).
+
+The model identifies:
+	•	Abnormal market behavior (manipulation, liquidity spikes, flash crashes)
+	•	Three distinct market regimes (calm, high-volatility, bullish momentum)
+
+This project is applicable to real-world crypto exchanges, improving market monitoring, risk detection, and strategic decision-making.
+
+Main Objectives
 	•	Build a data cleaning + ETL pipeline
-	•	Perform exploratory data analysis (histograms, boxplots, scatter plots, heatmap)
-	•	Engineer financial features:
-	•	daily returns
-	•	volatility (20-day)
-	•	intraday range
-	•	volume change
+	•	Perform exploratory data analysis (histograms, boxplots, scatter plots, heatmaps)
+	•	Engineer financial features: daily returns, volatility, intraday range, volume change
 	•	Detect anomalies using Isolation Forest
-	•	Identify regimes using K-Means Clustering
-	•	Interpret clusters for business value
-	•	Visualize regimes on price charts & PCA projection
+	•	Identify regimes using K-Means clustering
+	•	Interpret clusters for business insights
+	•	Visualize regimes on price charts and PCA projections
 
-⸻
-
-3. Technologies Used
+Technologies Used
 
 Category	Tools
 Programming	Python 3.10+
@@ -40,63 +36,23 @@ Finance	OHLCV data (Crypto)
 Deployment	Jupyter Notebook / Python Script
 Version Control	Git / GitHub
 
+Skills Developed
+	•	Data Engineering (ETL): missing values, duplicates, infinities, scaling, alignment
+	•	Exploratory Data Analysis: distributions, volatility clusters, outlier detection, correlation analysis
+	•	Feature Engineering: returns, volatility, price ranges, volume dynamics
+	•	Machine Learning: Isolation Forest (anomaly detection), K-Means (regime clustering), PCA
+	•	Business Interpretation: translating ML results into actionable insights, detecting market manipulation, identifying regimes
+	•	Professional Presentation: clean documentation, reproducible code, graphical interpretation, storytelling
 
-⸻
+Lessons Learned
+	•	Working with financial time-series data
+	•	Domain-specific feature engineering for crypto/finance
+	•	Understanding volatility, returns, and price ranges
+	•	Detecting risk signals using machine learning
+	•	Understanding market regimes for liquidity and volatility management
+	•	Building a full end-to-end ML pipeline for real exchanges
 
-4. Skills Developed
-
-During this project, I developed strong practical skills in:
-
-📌 Data Engineering (ETL)
-	•	Detecting and removing missing values
-	•	Handling duplicates
-	•	Treating infinities
-	•	Scaling data
-	•	Cleaning and aligning time series
-
-📌 Exploratory Data Analysis
-	•	Understanding distributions
-	•	Identifying volatility clusters
-	•	Detecting outliers visually
-	•	Correlation analysis with heatmaps
-
-📌 Feature Engineering
-	•	Financial returns
-	•	Volatility estimation
-	•	Price dynamics (High–Low range)
-	•	Volume analysis
-
-📌 Machine Learning (Unsupervised)
-	•	Isolation Forest for anomaly detection
-	•	K-Means for clustering and regime detection
-	•	PCA for dimensionality reduction
-
-📌 Business Interpretation
-	•	Linking ML results to actionable insights
-	•	Understanding market manipulation signals
-	•	Identifying bullish, bearish, and high-risk regimes
-
-📌 Professional Presentation
-	•	Clear documentation
-	•	Clean code for GitHub
-	•	Graphical interpretation
-	•	Market analytics storytelling
-
-⸻
-
-5. What I Learned
-
-This project taught me:
-	•	How financial time-series differ from normal datasets
-	•	How to engineer domain-specific features in crypto/finance
-	•	The importance of volatility, returns, and price ranges
-	•	How to detect risk signals using ML instead of rules
-	•	How market regimes help exchanges understand liquidity & volatility
-	•	How to build a full end-to-end ML pipeline used in real exchanges
-
-⸻
-
-6. Project Structure
+Project Structure
 
 crypto-market-analysis/
 │
@@ -120,121 +76,60 @@ crypto-market-analysis/
 │
 └── README.md
 
+Business Value for Local Token Exchange
+
+Anomaly Detection: flags unusual market movements including manipulations, liquidity shocks, flash crashes, and extreme volatility. Helps monitor market integrity and support regulatory compliance.
+
+Regime Clustering: identifies stable, high-volatility, and bullish phases. Useful for dynamic fee adjustments, liquidity management, internal dashboards, and institutional reporting.
 
 ⸻
 
-7. Business Value (for Local Token Exchange)
+Aperçu du Projet (FR)
 
-a) Anomaly Detection
+Ce projet construit un pipeline complet de machine learning non supervisé pour détecter les anomalies et identifier les régimes de marché à partir de données OHLCV (Open, High, Low, Close, Volume).
 
-The model flags unusual market movements such as:
-	•	manipulations
-	•	liquidity shocks
-	•	flash crashes
-	•	extraordinary volatility
+Le modèle distingue :
+	•	Comportements anormaux du marché (manipulations, pics de volatilité, chutes soudaines)
+	•	Trois régimes de marché distincts (calme, très volatil, momentum haussier)
 
-👉 Helps the exchange protect users, monitor market integrity, and support regulatory compliance.
+Ce projet est applicable aux exchanges crypto réels, améliorant la surveillance du marché et la prise de décision stratégique.
 
-b) Regime Clustering
-
-Identifies:
-	•	stable markets
-	•	high-volatility stress periods
-	•	bullish momentum phases
-
-👉 Useful for:
-	•	dynamic fee adjustment
-	•	liquidity management
-	•	internal risk dashboards
-	•	institutional investor reporting
-  
-
-🇫🇷 📌 Titre du Projet : Détection d’Anomalies & Régimes de Marché Crypto
-
-1. Aperçu du Projet
-
-Ce projet construit un pipeline complet de machine learning non supervisé pour :
-	•	détecter les anomalies de marché
-	•	identifier les régimes de marché
-
-à partir de données OHLCV (Open, High, Low, Close, Volume).
-
-Il permet de distinguer :
-	•	🔍 les comportements anormaux du marché
-	•	📊 trois régimes : calme, très volatil, momentum haussier
-
-Ce type d’analyse est utilisé par des exchanges crypto comme Local Token Exchange.
-
-⸻
-
-2. Objectifs
+Objectifs
 	•	Pipeline ETL complet
 	•	Analyse exploratoire détaillée
 	•	Feature engineering financier
-	•	Détection d’anomalies (Isolation Forest)
-	•	Clustering de régimes (K-Means)
+	•	Détection d’anomalies avec Isolation Forest
+	•	Clustering de régimes avec K-Means
 	•	Visualisation et interprétation métier
 
-⸻
-
-3. Technologies Utilisées
-	•	Python
+Technologies Utilisées
+	•	Python 3.10+
 	•	Pandas, NumPy
-	•	Scikit-learn
+	•	scikit-learn
 	•	Matplotlib, Seaborn
-	•	Jupyter Notebook
+	•	Jupyter Notebook / Script Python
 	•	Git / GitHub
 
-⸻
-
-4. Compétences Développées
+Compétences Développées
 	•	Nettoyage et préparation de données
-	•	Analyse statistique et visuelle
+	•	Analyse exploratoire et statistique
 	•	Feature engineering financier
 	•	Machine learning non supervisé
 	•	Détection d’anomalies
-	•	Clustering
-	•	Réduction de dimension PCA
+	•	Clustering et PCA
 	•	Interprétation business
-	•	Documentation professionnelle
+	•	Documentation et code professionnel
 
-⸻
-
-5. Ce Que J’ai Appris
+Ce que J’ai Appris
 	•	Manipuler des séries temporelles financières
-	•	Construire des features utilisés en finance
+	•	Construire des features spécifiques à la finance/crypto
 	•	Détecter automatiquement les risques de marché
 	•	Identifier les cycles et régimes de volatilité
 	•	Transformer un modèle ML en outil utile pour un exchange
 
-⸻
-
-6. Structure du Projet
+Structure du Projet
 
 (identique à la section anglaise)
 
-⸻
-
-7. Valeur Métier pour Local Token Exchange
-
-a) Détection d’Anomalies
-
-Permet de repérer :
-	•	manipulations
-	•	pics de volatilité
-	•	chutes soudaines
-	•	irrégularités de volume
-
-👉 Améliore la sécurité et la surveillance du marché.
-
-b) Détection des Régimes
-
-Permet de comprendre :
-	•	les périodes calmes
-	•	les phases de stress
-	•	les phases haussières
-
-👉 Utile pour :
-	•	ajustement des frais
-	•	gestion de liquidité
-	•	suivi des risques internes
+Détection d’anomalies : repérer les manipulations, pics de volatilité, chutes soudaines, et irrégularités de volume.
+Clustering des régimes : identifier les périodes calmes, les phases de stress et les phases haussières. Utile pour l’ajustement des frais, la gestion de liquidité et le reporting interne.
